@@ -9,7 +9,7 @@ app.get('/health', (req, res) => {
     res.status(200).json({ status: "NexusGuard AI is Operational" });
 });
 
-app.post('/github', githubRoutes);
+app.post('/api/github', githubRoutes);
 
 const PORT = config.PORT || 3000;
 
